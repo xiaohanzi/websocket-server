@@ -1,0 +1,14 @@
+package com.fm.mingwsserver.frame.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.socket.server.standard.ServerEndpointExporter;
+
+@Configuration
+public class WebsocketServerConfig {
+
+	@Bean
+    public ServerEndpointExporter serverEndpointExporter(){
+        return new ServerEndpointExporter();
+    }
+}
